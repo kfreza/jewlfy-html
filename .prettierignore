@@ -1,0 +1,6 @@
+# HTML files
+*.html
+
+# Minified files
+*.min.js
+*.min.css

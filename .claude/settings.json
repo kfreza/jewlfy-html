@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Figma__get_screenshot",
+      "Bash(npx sass *)",
+      "Bash(sass assets/scss/style.scss assets/css/style.css --no-source-map --style=expanded)",
+      "Bash(sass assets/scss/style.scss assets/css/style.css --style=expanded)",
+      "Bash(sass --version)",
+      "Bash(command -v npx)",
+      "Bash(ls -la *.json)",
+      "Read(//tmp/**)"
+    ]
+  }
+}

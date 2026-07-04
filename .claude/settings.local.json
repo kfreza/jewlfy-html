@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_Figma__get_metadata",
+      "mcp__claude_ai_Figma__get_variable_defs",
+      "mcp__claude_ai_Figma__get_design_context",
+      "Bash(node --check assets/js/main.js)",
+      "Bash(command -v sass)",
+      "Bash(sass assets/scss/style.scss assets/css/style.css --no-source-map)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Laralink"
+    ]
+  }
+}

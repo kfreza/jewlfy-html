@@ -1,0 +1,574 @@
+/*=============================================
+ Feature / Trust Badges
+===============================================*/
+.cs_feature_section {
+  padding: 64px 0;
+
+  .container-fluid {
+    max-width: 1744px;
+  }
+
+  &.cs_feature_band .cs_feature_band_in {
+    padding: 48px;
+    background-color: var(--gray4-color);
+  }
+
+  .cs_feature_grid {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+  @include cs-respond("desktop") {
+    &.cs_feature_band .cs_feature_band_in {
+      padding: 40px 24px;
+    }
+  }
+
+  @include cs-respond("laptop") {
+    &.cs_feature_band .cs_feature_band_in {
+      padding: 40px 20px;
+    }
+
+    .cs_feature_grid {
+      gap: 24px 15px;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    &.cs_feature_band .cs_feature_band_in {
+      padding: 40px 15px;
+    }
+
+    .cs_feature_grid {
+      display: grid;
+      gap: 30px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @include cs-respond("mobile") {
+    .cs_feature_grid {
+      gap: 24px;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/*=============================================
+ Shop by Category
+===============================================*/
+.cs_shop_category {
+  padding: 64px 0;
+
+  .cs_section_heading_style_1 {
+    margin-bottom: 32px;
+  }
+
+  .cs_slider_controller_2 {
+    margin-top: 32px;
+  }
+
+  .cs_category_slider {
+    padding-top: 32px;
+
+    .swiper-slide:nth-child(odd) {
+      transform: translateY(-32px);
+    }
+  }
+
+  .cs_category_card {
+    .cs_category_thumb {
+      min-height: 400px;
+    }
+
+    .cs_category_meta {
+      flex-direction: column;
+      margin-top: 28px;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+  }
+}
+
+/*=============================================
+ Why Jewlfy is Different
+===============================================*/
+.cs_why_different {
+  padding: 64px 0;
+
+  .cs_why_different_in {
+    display: grid;
+    grid-template-columns: minmax(0, 784fr) minmax(0, 536fr);
+    background-color: var(--gray-color);
+  }
+
+  .cs_why_different_content {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    padding: 110px 24px 106px 112px;
+  }
+
+  .cs_section_heading_style_1 {
+    .cs_section_title {
+      margin-bottom: 12px;
+    }
+  }
+
+  .cs_why_different_cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 648px;
+  }
+
+  .cs_why_different_card {
+    padding: 24px 24px 28px;
+
+    .cs_card_title {
+      margin-bottom: 12px;
+    }
+
+    .cs_card_text {
+      color: var(--secondary-color);
+    }
+  }
+
+  .cs_why_different_thumb {
+    position: relative;
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @include cs-respond("laptop") {
+    .cs_why_different_content {
+      padding: 48px;
+    }
+
+    .cs_why_different_card {
+      padding: 20px 15px 24px;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+
+    .cs_why_different_in {
+      grid-template-columns: 1fr;
+    }
+
+    .cs_why_different_thumb {
+      order: -1;
+
+      img {
+        position: static;
+      }
+    }
+  }
+
+  @include cs-respond("tablet") {
+    .cs_why_different_content {
+      padding: 24px 15px;
+    }
+
+    .cs_why_different_cards {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+/*=============================================
+ Our Partners
+===============================================*/
+.cs_partners_section {
+  padding: 64px 0;
+
+  .container-fluid {
+    max-width: 1744px;
+  }
+
+  .cs_section_heading_style_1 {
+    margin-bottom: 40px;
+  }
+
+  .cs_partners_slider {
+    .swiper-wrapper {
+      align-items: center;
+      // Keep the marquee gliding at a constant speed
+      transition-timing-function: linear;
+    }
+
+    .swiper-slide {
+      width: auto;
+    }
+  }
+
+  .cs_partner_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+
+    .cs_section_heading_style_1 {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+/*=============================================
+ Funfact Counter Component
+===============================================*/
+.cs_funfact_list {
+  display: flex;
+  align-items: center;
+  padding: 22px 24px;
+  background-color: var(--border-color);
+
+  .cs_funfact {
+    flex: 1;
+    padding-left: clamp(8px, 7%, 63px);
+    padding-right: clamp(8px, 7%, 63px);
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--gray4-color);
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  .cs_funfact_number {
+    color: var(--primary-color);
+    margin-bottom: 4px;
+    white-space: nowrap;
+    line-height: 1em;
+    display: flex;
+    align-items: center;
+  }
+
+  .cs_funfact_unit {
+    color: inherit;
+  }
+
+  @include cs-respond("tablet-lg") {
+    .cs_funfact {
+      padding: 0;
+
+      &:not(:last-child) {
+        border: 0;
+      }
+    }
+  }
+
+  @include cs-respond("mobile") {
+    gap: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*=============================================
+ Exclusive Insider Section
+===============================================*/
+.cs_insider_section_1 {
+  padding: 64px 0;
+
+  .container-fluid {
+    max-width: 1744px;
+  }
+
+  .cs_insider_in {
+    padding: 64px 0;
+    display: grid;
+    gap: 24px;
+    align-items: center;
+    grid-template-columns: 1fr 1.9fr 1fr;
+    border-top: 1px solid var(--gray4-color);
+    border-bottom: 1px solid var(--gray4-color);
+  }
+
+  .cs_insider_info {
+    max-width: 343px;
+
+    .cs_insider_info_title {
+      margin-bottom: 24px;
+    }
+
+    .cs_info_text span {
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+
+    .cs_insider_info_phone {
+      display: inline-block;
+      margin-top: 13px;
+      color: var(--primary-color);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .cs_newsletter_style_1 {
+    display: block;
+    width: min(100%, 648px);
+    margin: 0 auto;
+    padding: 0;
+
+    .cs_newsletter_heading {
+      max-width: 540px;
+      margin: 0 auto 24px;
+    }
+
+    .cs_newsletter_subtitle {
+      color: #b8962e;
+      margin-bottom: 6px;
+    }
+
+    .cs_newsletter_title {
+      margin-bottom: 12px;
+    }
+
+    .cs_newsletter_form {
+      width: 100%;
+      flex-direction: row;
+      text-align: left;
+
+      input {
+        padding: 15px 16px;
+        border-color: var(--gray4-color);
+        background-color: var(--gray-color);
+      }
+    }
+  }
+
+  .cs_insider_highlights {
+    max-width: 286px;
+    margin-left: auto;
+
+    .cs_highlights_title {
+      margin-bottom: 26px;
+    }
+
+    .cs_highlight_tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+
+      a {
+        display: inline-block;
+        padding: 6px 12px;
+        text-wrap: nowrap;
+        color: var(--primary-color);
+        background-color: var(--gray-color);
+        transition:
+          color 0.3s ease,
+          background-color 0.3s ease;
+
+        &:hover {
+          color: var(--white-color);
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    .container-fluid {
+      max-width: 768px;
+    }
+
+    .cs_insider_in {
+      padding: 50px 0;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .cs_newsletter_style_1 {
+      width: 100%;
+      order: 1;
+      grid-column: 1 / -1;
+    }
+
+    .cs_insider_info,
+    .cs_insider_highlights {
+      max-width: 100%;
+    }
+
+    .cs_insider_info {
+      order: 2;
+    }
+
+    .cs_insider_highlights {
+      order: 2;
+    }
+  }
+
+  @include cs-respond("mobile") {
+    .cs_newsletter_style_1 {
+      .cs_newsletter_form {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.cs_newsletter_section_1 {
+
+  .cs_newsletter_row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 84px 0;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .cs_newsletter_style_1 {
+    display: block;
+    width: min(100%, 648px);
+    padding: 0;
+
+    .cs_newsletter_heading {
+      margin-bottom: 24px;
+    }
+
+    .cs_newsletter_subtitle {
+      color: #b8962e;
+      margin-bottom: 6px;
+    }
+
+    .cs_newsletter_title {
+      margin-bottom: 12px;
+    }
+
+    .cs_newsletter_form {
+      width: 100%;
+      flex-direction: row;
+
+      input {
+        border: 0;
+        background-color: var(--gray-color);
+      }
+    }
+
+    .cs_newsletter_note {
+      margin-top: 12px;
+    }
+  }
+
+  .cs_newsletter_media {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    padding-right: 20px;
+
+
+    img {
+      width: 170px;
+      height: 246px;
+      object-fit: cover;
+      animation: rotationShake 10s linear infinite;
+    }
+  }
+
+  @include cs-respond("laptop") {
+    .cs_newsletter_media img {
+      width: 150px;
+      height: 220px;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding-bottom: 80px;
+
+    .cs_newsletter_row {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 40px;
+    }
+
+    .cs_newsletter_style_1 {
+      width: 100%;
+    }
+
+    .cs_newsletter_media {
+      justify-content: center;
+      padding-right: 0;
+    }
+  }
+
+  @include cs-respond("mobile") {
+    .cs_newsletter_style_1 .cs_newsletter_form {
+      flex-direction: column;
+    }
+
+    .cs_newsletter_media {
+      display: none;
+    }
+  }
+}
+
+
+.cs_signature_section {
+  padding: 64px 0;
+
+  .container-fluid {
+    max-width: 1744px;
+  }
+
+  .cs_section_heading_styel_2 {
+    margin-bottom: 32px;
+  }
+
+  .cs_product_promo_5 {
+    height: 100%;
+    width: min(100%, 736px);
+  }
+}
+
+/*=====================================================
+  Offer Banner section spacing
+=======================================================*/
+.cs_offer_section {
+  padding: 64px 0;
+
+  .container-fluid {
+    max-width: 1744px;
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+  }
+}
+
+
+/*=========================================================
+ Animations
+===========================================================*/
+@keyframes rotationShake {
+  50% {
+    transform: translateX(-40px) rotate(-15deg);
+  }
+}

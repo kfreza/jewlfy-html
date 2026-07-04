@@ -1,0 +1,453 @@
+/*=============================================
+  About Style 1 — Our Story
+===============================================*/
+.cs_about_style_1 {
+  padding: 64px 0;
+
+  .cs_about_in {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cs_about_thumb {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      top: 30px;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      border: 1px solid var(--gray4-color);
+    }
+  }
+
+  .cs_about_content {
+    padding-left: 112px;
+  }
+
+  .cs_section_heading_style_1 {
+    margin-bottom: 32px;
+  }
+
+  .cs_about_band {
+    width: min(163%, 872px);
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 32px;
+    margin-left: -63%;
+    background-color: var(--gray-color);
+  }
+
+  .cs_about_band_text {
+    padding: 48px 10% 48px 48px;
+  }
+
+  .cs_about_desc {
+    margin-bottom: 32px;
+  }
+
+  .cs_about_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    &::after {
+      content: "";
+      width: 0;
+      height: 1px;
+      margin-top: 12px;
+      margin-bottom: auto;
+      background-color: currentColor;
+      transition: width 0.3s ease;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+
+      &::after {
+        width: 20px;
+      }
+    }
+  }
+
+  .cs_about_band_thumb {
+    flex: none;
+    width: 224px;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .cs_about_features {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+
+
+  /*------------------------------------------
+    Responsive : reflow the overlapping layout
+  --------------------------------------------*/
+  @include cs-respond("laptop") {
+    .cs_about_in {
+      min-height: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .cs_about_thumb,
+    .cs_about_head,
+    .cs_about_band,
+    .cs_about_features {
+      position: static;
+      width: 100%;
+      left: auto;
+      top: auto;
+    }
+
+    // Order : heading, image, story band, features
+    .cs_about_head {
+      order: 1;
+    }
+
+    .cs_about_thumb {
+      order: 2;
+      height: auto;
+      aspect-ratio: 648 / 630;
+
+      &::before {
+        left: -16px;
+        top: 16px;
+      }
+    }
+
+    .cs_about_band {
+      order: 3;
+      height: auto;
+    }
+
+    .cs_about_features {
+      order: 4;
+      gap: 24px;
+    }
+
+    .cs_about_band_text {
+      padding: 32px 24px;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+  }
+
+  @include cs-respond("tablet") {
+    .cs_about_band {
+      flex-direction: column;
+    }
+
+    .cs_about_band_text {
+      padding: 24px;
+    }
+
+    .cs_about_band_thumb {
+      width: 100%;
+      height: 240px;
+    }
+  }
+
+  @include cs-respond("mobile") {
+    .cs_about_feature {
+      gap: 16px;
+    }
+
+    .cs_about_feature_icon {
+      width: 72px;
+      height: 72px;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+.cs_about_style_2 {
+  padding: 64px 0;
+
+  @media (min-width:1440px) {
+    .container {
+      max-width: 1544px;
+    }
+  }
+
+  .cs_section_heading_style_1 {
+    max-width: 1140px;
+    margin: 0 auto 32px;
+  }
+
+  .cs_about_in {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cs_about_features {
+    flex: 0 0 34%;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+  }
+
+  .cs_about_media_wrap {
+    flex: 1;
+    position: relative;
+  }
+
+  .cs_about_media {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  .cs_about_media_1 {
+    flex: 0 0 44%;
+    border-radius: 500px 500px 0 0;
+  }
+
+  .cs_about_media_2 {
+    flex: 1;
+    border-radius: 500px 500px 0 0;
+  }
+
+  .cs_about_media_1 img,
+  .cs_about_media_2 img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .cs_about_media_caption {
+    margin-top: 12px;
+  }
+
+  /*------------------------------------------
+    Gold badge straddling the two arch images
+  --------------------------------------------*/
+  .cs_about_badge {
+    position: absolute;
+    top: 0;
+    left: -60px;
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: var(--accent-color);
+    transition: transform 0.4s ease;
+
+    img {
+      flex: 1;
+      border-radius: 0;
+      animation: circularRotation 10s linear infinite;
+    }
+
+    .cs_badge_icon {
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 24px;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+
+      img {
+        animation-play-state: paused;
+      }
+    }
+  }
+
+  /*------------------------------------------
+    Responsive
+  --------------------------------------------*/
+  @include cs-respond("laptop") {
+    .cs_about_in {
+      gap: 40px;
+    }
+
+    .cs_about_features {
+      flex-basis: 34%;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+
+    .cs_about_heading {
+      margin-bottom: 40px;
+    }
+
+    .cs_about_in {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 40px;
+    }
+
+    .cs_about_media {
+      order: 1;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .cs_about_features {
+      order: 2;
+      flex-basis: auto;
+    }
+  }
+
+  @include cs-respond("mobile") {
+    .cs_about_features {
+      gap: 24px;
+    }
+
+    .cs_about_badge {
+      top: 12px;
+      left: auto;
+      right: 12px;
+      width: 88px;
+      height: 88px;
+    }
+  }
+}
+
+.cs_about_style_3 {
+  padding: 64px 0;
+  overflow: hidden;
+
+  .cs_about_header {
+    margin-bottom: 24px;
+  }
+
+  .cs_section_heading_style_1 {
+    max-width: 1010px;
+    margin-bottom: 48px;
+  }
+
+  .cs_about_link {
+    display: inline-block;
+
+    &:hover {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+  }
+
+  .cs_about_gallery {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    padding: 0 34px;
+  }
+
+  .cs_gallery_item {
+    overflow: hidden;
+    max-width: 424px;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:nth-child(1) {
+      padding-right: 34px;
+      transform: rotate(-10deg);
+    }
+
+    &:nth-child(3) {
+      padding-left: 34px;
+      transform: rotate(10deg);
+    }
+  }
+
+  .cs_gallery_caption {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    right: 0;
+  }
+
+  .cs_about_features {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, auto);
+  }
+
+  .cs_about_feature {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+
+    img {
+      width: 33px;
+      height: 35px;
+      flex: none;
+    }
+
+  }
+
+  @include cs-respond("laptop") {
+    .cs_about_gallery {
+      gap: 16px;
+    }
+  }
+
+  @include cs-respond("tablet-lg") {
+    padding: 50px 0;
+  }
+
+  @include cs-respond("tablet") {}
+
+}
+
+/*=======================================================
+  Animations
+==========================================================*/
+
+@keyframes cs_badge_spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
