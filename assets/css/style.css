@@ -3993,29 +3993,29 @@ label {
   }
 }
 
-.cs_testimonial_style_2, .cs_testimonial_style_3 {
+.cs_testimonial_style_2, .cs_testimonial_style_5, .cs_testimonial_style_3 {
   display: grid;
   gap: 24px;
   align-items: center;
   grid-template-columns: repeat(2, 1fr);
 }
-.cs_testimonial_style_2 .cs_testimonial_review, .cs_testimonial_style_3 .cs_testimonial_review {
+.cs_testimonial_style_2 .cs_testimonial_review, .cs_testimonial_style_5 .cs_testimonial_review, .cs_testimonial_style_3 .cs_testimonial_review {
   min-width: 0;
   max-width: 540px;
 }
-.cs_testimonial_style_2 .cs_section_heading_style_1, .cs_testimonial_style_3 .cs_section_heading_style_1 {
+.cs_testimonial_style_2 .cs_section_heading_style_1, .cs_testimonial_style_5 .cs_section_heading_style_1, .cs_testimonial_style_3 .cs_section_heading_style_1 {
   margin-bottom: 6px;
 }
-.cs_testimonial_style_2 .cs_testimonial_slider, .cs_testimonial_style_3 .cs_testimonial_slider {
+.cs_testimonial_style_2 .cs_testimonial_slider, .cs_testimonial_style_5 .cs_testimonial_slider, .cs_testimonial_style_3 .cs_testimonial_slider {
   width: 100%;
   padding: 0;
 }
-.cs_testimonial_style_2 .cs_review_card, .cs_testimonial_style_3 .cs_review_card {
+.cs_testimonial_style_2 .cs_review_card, .cs_testimonial_style_5 .cs_review_card, .cs_testimonial_style_3 .cs_review_card {
   width: 100%;
   position: relative;
   padding-top: 60px;
 }
-.cs_testimonial_style_2 .cs_review_card .cs_review_quote, .cs_testimonial_style_3 .cs_review_card .cs_review_quote {
+.cs_testimonial_style_2 .cs_review_card .cs_review_quote, .cs_testimonial_style_5 .cs_review_card .cs_review_quote, .cs_testimonial_style_3 .cs_review_card .cs_review_quote {
   position: absolute;
   left: 0;
   top: 0;
@@ -4025,15 +4025,15 @@ label {
   opacity: 0.45;
   pointer-events: none;
 }
-.cs_testimonial_style_2 .cs_review_card .cs_review_quote img, .cs_testimonial_style_3 .cs_review_card .cs_review_quote img {
+.cs_testimonial_style_2 .cs_review_card .cs_review_quote img, .cs_testimonial_style_5 .cs_review_card .cs_review_quote img, .cs_testimonial_style_3 .cs_review_card .cs_review_quote img {
   display: block;
   width: 100%;
   height: 100%;
 }
-.cs_testimonial_style_2 .cs_review_card .cs_rating, .cs_testimonial_style_3 .cs_review_card .cs_rating {
+.cs_testimonial_style_2 .cs_review_card .cs_rating, .cs_testimonial_style_5 .cs_review_card .cs_rating, .cs_testimonial_style_3 .cs_review_card .cs_rating {
   margin-bottom: 12px;
 }
-.cs_testimonial_style_2 .cs_review_card blockquote, .cs_testimonial_style_3 .cs_review_card blockquote {
+.cs_testimonial_style_2 .cs_review_card blockquote, .cs_testimonial_style_5 .cs_review_card blockquote, .cs_testimonial_style_3 .cs_review_card blockquote {
   max-width: 538px;
   margin-bottom: 32px;
   font-size: 18px;
@@ -4043,52 +4043,54 @@ label {
   color: var(--primary-color);
   font-family: var(--secondary-font);
 }
-.cs_testimonial_style_2 .cs_review_card .cs_review_author, .cs_testimonial_style_3 .cs_review_card .cs_review_author {
+.cs_testimonial_style_2 .cs_review_card .cs_review_author, .cs_testimonial_style_5 .cs_review_card .cs_review_author, .cs_testimonial_style_3 .cs_review_card .cs_review_author {
   display: flex;
   align-items: center;
   gap: 16px;
 }
-.cs_testimonial_style_2 .cs_review_card .cs_review_avatar, .cs_testimonial_style_3 .cs_review_card .cs_review_avatar {
+.cs_testimonial_style_2 .cs_review_card .cs_review_avatar, .cs_testimonial_style_5 .cs_review_card .cs_review_avatar, .cs_testimonial_style_3 .cs_review_card .cs_review_avatar {
   flex: none;
   width: 100px;
   height: 100px;
   border-radius: 50%;
   overflow: hidden;
 }
-.cs_testimonial_style_2 .cs_review_card .cs_review_avatar img, .cs_testimonial_style_3 .cs_review_card .cs_review_avatar img {
+.cs_testimonial_style_2 .cs_review_card .cs_review_avatar img, .cs_testimonial_style_5 .cs_review_card .cs_review_avatar img, .cs_testimonial_style_3 .cs_review_card .cs_review_avatar img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cs_testimonial_style_2 .cs_review_card .cs_review_label, .cs_testimonial_style_3 .cs_review_card .cs_review_label {
+.cs_testimonial_style_2 .cs_review_card .cs_review_label, .cs_testimonial_style_5 .cs_review_card .cs_review_label, .cs_testimonial_style_3 .cs_review_card .cs_review_label {
   margin-top: 4px;
 }
-.cs_testimonial_style_2 .cs_slider_controller_2, .cs_testimonial_style_3 .cs_slider_controller_2, .cs_testimonial_style_2 .cs_slider_controller_3, .cs_testimonial_style_3 .cs_slider_controller_3 {
+.cs_testimonial_style_2 .cs_slider_controller_2, .cs_testimonial_style_5 .cs_slider_controller_2, .cs_testimonial_style_3 .cs_slider_controller_2, .cs_testimonial_style_2 .cs_slider_controller_3, .cs_testimonial_style_5 .cs_slider_controller_3, .cs_testimonial_style_3 .cs_slider_controller_3 {
   margin-top: 32px;
   gap: 40px;
   justify-content: flex-end;
 }
-.cs_testimonial_style_2 .cs_slider_controller_2::before, .cs_testimonial_style_3 .cs_slider_controller_2::before, .cs_testimonial_style_2 .cs_slider_controller_3::before, .cs_testimonial_style_3 .cs_slider_controller_3::before {
+.cs_testimonial_style_2 .cs_slider_controller_2::before, .cs_testimonial_style_5 .cs_slider_controller_2::before, .cs_testimonial_style_3 .cs_slider_controller_2::before, .cs_testimonial_style_2 .cs_slider_controller_3::before, .cs_testimonial_style_5 .cs_slider_controller_3::before, .cs_testimonial_style_3 .cs_slider_controller_3::before {
   content: "";
   flex: 1;
   height: 1px;
   background-color: var(--gray4-color);
 }
-.cs_testimonial_style_2 .cs_testimonial_media, .cs_testimonial_style_3 .cs_testimonial_media {
+.cs_testimonial_style_2 .cs_testimonial_media, .cs_testimonial_style_5 .cs_testimonial_media, .cs_testimonial_style_3 .cs_testimonial_media {
   position: relative;
   height: 100%;
   padding: 0 0 100px;
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg,
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg,
 .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm,
+.cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm,
 .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm {
   display: flex;
   gap: 30px;
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img,
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img,
 .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm img,
+.cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm img,
 .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm img {
   display: block;
   width: 100%;
@@ -4096,79 +4098,81 @@ label {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img {
   width: min(65%, 424px);
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg .cs_review_stat {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg .cs_review_stat, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg .cs_review_stat {
   margin-top: 12px;
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm {
   align-items: flex-end;
   position: absolute;
   left: 0;
   bottom: 0;
   height: calc(100% - 100px);
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm img {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm img, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm img {
   width: min(58%, 312px);
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm .cs_review_stat {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm .cs_review_stat, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm .cs_review_stat {
   margin-bottom: 20px;
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_stat {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_stat, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_stat {
   z-index: 2;
   display: flex;
   align-items: baseline;
   gap: 8px;
   line-height: 1;
 }
-.cs_testimonial_style_2 .cs_testimonial_media .cs_review_stat_value, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_stat_value {
+.cs_testimonial_style_2 .cs_testimonial_media .cs_review_stat_value, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_stat_value, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_stat_value {
   line-height: 1;
 }
 @media (max-width: 991px) {
-  .cs_testimonial_style_2, .cs_testimonial_style_3 {
+  .cs_testimonial_style_2, .cs_testimonial_style_5, .cs_testimonial_style_3 {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media, .cs_testimonial_style_3 .cs_testimonial_media {
+  .cs_testimonial_style_2 .cs_testimonial_media, .cs_testimonial_style_5 .cs_testimonial_media, .cs_testimonial_style_3 .cs_testimonial_media {
     order: -1;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img {
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img {
     flex: 1;
   }
 }
 @media (max-width: 575px) {
-  .cs_testimonial_style_2 .cs_review_avatar, .cs_testimonial_style_3 .cs_review_avatar {
+  .cs_testimonial_style_2 .cs_review_avatar, .cs_testimonial_style_5 .cs_review_avatar, .cs_testimonial_style_3 .cs_review_avatar {
     width: 72px;
     height: 72px;
   }
-  .cs_testimonial_style_2 blockquote, .cs_testimonial_style_3 blockquote {
+  .cs_testimonial_style_2 blockquote, .cs_testimonial_style_5 blockquote, .cs_testimonial_style_3 blockquote {
     margin-bottom: 24px;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg,
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg,
   .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm,
+  .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm,
   .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm {
     width: 100%;
     gap: 24px;
     flex-direction: column;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg .cs_review_stat,
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg .cs_review_stat, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg .cs_review_stat, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg .cs_review_stat,
   .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm .cs_review_stat,
+  .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm .cs_review_stat,
   .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm .cs_review_stat {
     margin: 0;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg {
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg {
     padding-left: 30%;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img {
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_lg img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_lg img {
     width: 100%;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm {
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm {
     gap: 15px;
     flex-direction: column;
     align-items: flex-start;
   }
-  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm img {
+  .cs_testimonial_style_2 .cs_testimonial_media .cs_review_media_sm img, .cs_testimonial_style_5 .cs_testimonial_media .cs_review_media_sm img, .cs_testimonial_style_3 .cs_testimonial_media .cs_review_media_sm img {
     width: 50%;
   }
 }
@@ -9453,7 +9457,52 @@ label {
 .cs_product_style_1.cs_type_1 .cs_product_thumb {
   flex-direction: column;
 }
+.cs_product_style_1.cs_type_1 .cs_product_badges {
+  top: 24px;
+  left: 24px;
+  right: 24px;
+}
+.cs_product_style_1.cs_type_1 .cs_action_btns {
+  flex-direction: column;
+  width: initial;
+  left: initial;
+  bottom: initial;
+  top: 24px;
+  right: 24px;
+}
 .cs_product_style_1.cs_type_1 .cs_product_info {
   position: absolute;
   bottom: 0;
+  padding-bottom: 32px;
+}
+
+.cs_testimonial_section .container-fluid {
+  max-width: 1744px;
+}
+
+.cs_testimonial_style_5 {
+  display: block;
+  padding: 32px;
+}
+.cs_testimonial_style_5 .cs_review_card {
+  padding-top: 0;
+}
+.cs_testimonial_style_5 .cs_review_card .cs_review_content {
+  position: relative;
+  margin-top: 12px;
+  padding-top: 61px;
+}
+.cs_testimonial_style_5 .cs_review_card .cs_review_quote {
+  display: block;
+  z-index: 1;
+  opacity: 1;
+}
+.cs_testimonial_style_5 .cs_review_card .cs_rating {
+  margin-bottom: 20px;
+  z-index: 2;
+}
+.cs_testimonial_style_5 .cs_review_card blockquote {
+  position: relative;
+  z-index: 3;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
