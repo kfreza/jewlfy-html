@@ -58,6 +58,33 @@
   }
 }
 
-.cs_testimonial_note{
+.cs_testimonial_note {
   margin-top: 32px;
+}
+
+// Buying Guide
+.cs_guide_section {
+  padding: 64px 0px;
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_grid_col_5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 44px;
+}
+.cs_iconbox_style_2 {
+  @extend .cs_iconbox_style_1;
+  &.cs_iconbox_center {
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+    .cs_iconbox_info {
+      align-items: start;
+    }
+    .cs_iconbox_title {
+      margin-bottom: 24px;
+    }
+  }
 }

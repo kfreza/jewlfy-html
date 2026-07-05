@@ -2670,52 +2670,50 @@ label {
 /*=============================================
  Iconbox Component
 ===============================================*/
-.cs_iconbox_style_1 {
+.cs_iconbox_style_1, .cs_iconbox_style_2 {
   display: flex;
   gap: 24px;
 }
-.cs_iconbox_style_1 .cs_iconbox_icon {
+.cs_iconbox_style_1 .cs_iconbox_icon, .cs_iconbox_style_2 .cs_iconbox_icon {
   flex: none;
   width: 88px;
   height: 88px;
   padding: 19px;
 }
-.cs_iconbox_style_1 .cs_iconbox_icon img {
+.cs_iconbox_style_1 .cs_iconbox_icon img, .cs_iconbox_style_2 .cs_iconbox_icon img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 0;
   transition: transform 0.3s cubic-bezier(0.45, 0.45, 0.35, 1.65);
 }
-.cs_iconbox_style_1 .cs_iconbox_info {
+.cs_iconbox_style_1 .cs_iconbox_info, .cs_iconbox_style_2 .cs_iconbox_info {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.cs_iconbox_style_1 .cs_iconbox_title {
+.cs_iconbox_style_1 .cs_iconbox_title, .cs_iconbox_style_2 .cs_iconbox_title {
   margin-bottom: 6px;
 }
-.cs_iconbox_style_1:hover .cs_iconbox_icon img {
+.cs_iconbox_style_1:hover .cs_iconbox_icon img, .cs_iconbox_style_2:hover .cs_iconbox_icon img {
   animation: bubleUp 0.6s cubic-bezier(0.45, 0.45, 0.35, 1.65);
 }
-.cs_iconbox_style_1.cs_iconbox_center {
+.cs_iconbox_style_1.cs_iconbox_center, .cs_iconbox_center.cs_iconbox_style_2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: 32px;
 }
-.cs_iconbox_style_1.cs_iconbox_center .cs_iconbox_info {
+.cs_iconbox_style_1.cs_iconbox_center .cs_iconbox_info, .cs_iconbox_center.cs_iconbox_style_2 .cs_iconbox_info {
   align-items: center;
 }
-.cs_iconbox_style_1.cs_iconbox_center .cs_iconbox_title {
+.cs_iconbox_style_1.cs_iconbox_center .cs_iconbox_title, .cs_iconbox_center.cs_iconbox_style_2 .cs_iconbox_title {
   margin-bottom: 12px;
 }
 @media (max-width: 1199px) {
-  .cs_iconbox_style_1 {
+  .cs_iconbox_style_1, .cs_iconbox_style_2 {
     gap: 24px 15px;
   }
-  .cs_iconbox_style_1 .cs_iconbox_icon {
+  .cs_iconbox_style_1 .cs_iconbox_icon, .cs_iconbox_style_2 .cs_iconbox_icon {
     width: 60px;
     height: 60px;
     padding: 12px;
@@ -9509,4 +9507,29 @@ label {
 
 .cs_testimonial_note {
   margin-top: 32px;
+}
+
+.cs_guide_section {
+  padding: 64px 0px;
+}
+.cs_guide_section .container-fluid {
+  max-width: 1744px;
+}
+
+.cs_grid_col_5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 44px;
+}
+
+.cs_iconbox_style_2.cs_iconbox_center {
+  align-items: flex-start;
+  text-align: left;
+  gap: 6px;
+}
+.cs_iconbox_style_2.cs_iconbox_center .cs_iconbox_info {
+  align-items: start;
+}
+.cs_iconbox_style_2.cs_iconbox_center .cs_iconbox_title {
+  margin-bottom: 24px;
 }/*# sourceMappingURL=style.css.map */
