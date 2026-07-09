@@ -88,3 +88,125 @@
     }
   }
 }
+
+// Deal of the Day
+.cs_deal_section {
+  padding: 64px 0px;
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_deal_banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 700px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      var(--black-color) 7%,
+      rgba(32, 32, 32, 0) 53%
+    );
+  }
+
+  @include cs-respond("tablet-lg") {
+    min-height: auto;
+    padding: 64px 40px;
+
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(32, 32, 32, 0.85) 0%,
+        rgba(32, 32, 32, 0.5) 100%
+      );
+    }
+  }
+}
+.cs_deal_content {
+  position: relative;
+  z-index: 1;
+  padding-left: 200px;
+
+  .cs_deal_label {
+    margin-bottom: 4px;
+  }
+  .cs_deal_title {
+    margin-bottom: 12px;
+  }
+  .cs_deal_title_sm {
+    display: block;
+  }
+  .cs_deal_desc {
+    margin-bottom: 24px;
+    max-width: 424px;
+  }
+  .cs_deal_price {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    .cs_deal_price_old {
+      color: var(--gray2-color);
+    }
+  }
+  .cs_deal_timer_label {
+    margin-bottom: 12px;
+  }
+  .cs_countdown {
+    margin-bottom: 24px;
+    justify-content: flex-start;
+    gap: 11px;
+    .cs_countdown_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 100px;
+      height: 70px;
+      padding: 0;
+      background-color: rgba(32, 32, 32, 0.3);
+      border: 1px solid var(--white-color);
+    }
+    .cs_countdown_label {
+      line-height: 2em;
+    }
+    @include cs-respond("tablet") {
+      gap: 8px;
+      .cs_countdown_item {
+        min-width: 80px;
+      }
+    }
+    @include cs-respond("mobile") {
+      .cs_countdown_item {
+        min-width: 72px;
+      }
+    }
+  }
+  .cs_deal_action {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    @include cs-respond("mobile") {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  .cs_deal_btn {
+    padding: 12px 24px;
+    background-color: rgba(32, 32, 32, 0.3);
+    border: 1px solid var(--accent-color);
+  }
+  @include cs-respond("laptop") {
+    padding-left: 64px;
+  }
+  @include cs-respond("tablet-lg") {
+    padding-left: 0;
+  }
+}
+
+//

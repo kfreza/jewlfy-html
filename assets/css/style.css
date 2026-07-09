@@ -9532,4 +9532,123 @@ label {
 }
 .cs_iconbox_style_2.cs_iconbox_center .cs_iconbox_title {
   margin-bottom: 24px;
+}
+
+.cs_deal_section {
+  padding: 64px 0px;
+}
+.cs_deal_section .container-fluid {
+  max-width: 1744px;
+}
+
+.cs_deal_banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 700px;
+}
+.cs_deal_banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--black-color) 7%, rgba(32, 32, 32, 0) 53%);
+}
+@media (max-width: 991px) {
+  .cs_deal_banner {
+    min-height: auto;
+    padding: 64px 40px;
+  }
+  .cs_deal_banner::before {
+    background: linear-gradient(180deg, rgba(32, 32, 32, 0.85) 0%, rgba(32, 32, 32, 0.5) 100%);
+  }
+}
+
+.cs_deal_content {
+  position: relative;
+  z-index: 1;
+  padding-left: 200px;
+}
+.cs_deal_content .cs_deal_label {
+  margin-bottom: 4px;
+}
+.cs_deal_content .cs_deal_title {
+  margin-bottom: 12px;
+}
+.cs_deal_content .cs_deal_title_sm {
+  display: block;
+}
+.cs_deal_content .cs_deal_desc {
+  margin-bottom: 24px;
+  max-width: 424px;
+}
+.cs_deal_content .cs_deal_price {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cs_deal_content .cs_deal_price .cs_deal_price_old {
+  color: var(--gray2-color);
+}
+.cs_deal_content .cs_deal_timer_label {
+  margin-bottom: 12px;
+}
+.cs_deal_content .cs_countdown {
+  margin-bottom: 24px;
+  justify-content: flex-start;
+  gap: 11px;
+}
+.cs_deal_content .cs_countdown .cs_countdown_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100px;
+  height: 70px;
+  padding: 0;
+  background-color: rgba(32, 32, 32, 0.3);
+  border: 1px solid var(--white-color);
+}
+.cs_deal_content .cs_countdown .cs_countdown_label {
+  line-height: 2em;
+}
+@media (max-width: 767px) {
+  .cs_deal_content .cs_countdown {
+    gap: 8px;
+  }
+  .cs_deal_content .cs_countdown .cs_countdown_item {
+    min-width: 80px;
+  }
+}
+@media (max-width: 575px) {
+  .cs_deal_content .cs_countdown .cs_countdown_item {
+    min-width: 72px;
+  }
+}
+.cs_deal_content .cs_deal_action {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+@media (max-width: 575px) {
+  .cs_deal_content .cs_deal_action {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.cs_deal_content .cs_deal_btn {
+  padding: 12px 24px;
+  background-color: rgba(32, 32, 32, 0.3);
+  border: 1px solid var(--accent-color);
+}
+@media (max-width: 1199px) {
+  .cs_deal_content {
+    padding-left: 64px;
+  }
+}
+@media (max-width: 991px) {
+  .cs_deal_content {
+    padding-left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
