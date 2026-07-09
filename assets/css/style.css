@@ -9730,4 +9730,78 @@ label {
   padding: 12px 24px;
   background-color: rgba(32, 32, 32, 0.3);
   border: 1px solid var(--accent-color);
+}
+
+.cs_blog_section {
+  padding: 64px 0px;
+}
+.cs_blog_section .container-fluid {
+  max-width: 1744px;
+}
+
+.cs_blog_showcase_grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 24px;
+}
+.cs_blog_showcase_grid .cs_post_style_4 {
+  height: 600px;
+}
+.cs_blog_showcase_grid .cs_post_style_4::before {
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0) 35%, var(--black-color) 100%);
+}
+.cs_blog_showcase_grid .cs_post_style_4 .cs_post_thumbnail {
+  max-height: none;
+}
+.cs_blog_showcase_grid .cs_post_style_4 .cs_post_content {
+  padding: 32px;
+}
+.cs_blog_showcase_grid .cs_post_style_4.cs_type_1::before {
+  background: linear-gradient(180deg, rgba(32, 32, 32, 0) 0%, var(--black-color) 100%);
+}
+.cs_blog_showcase_grid .cs_post_style_4.cs_type_1 .cs_post_content {
+  padding: 48px;
+}
+.cs_blog_showcase_grid .cs_post_style_4.cs_type_1 .cs_post_title {
+  margin-bottom: 48px;
+}
+@media (max-width: 991px) {
+  .cs_blog_showcase_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4 {
+    height: 480px;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4.cs_type_1 {
+    grid-column: 1/-1;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4.cs_type_1 .cs_post_content {
+    padding: 32px;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4.cs_type_1 .cs_post_title {
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 575px) {
+  .cs_blog_showcase_grid {
+    grid-template-columns: 1fr;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4 {
+    height: 420px;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4 .cs_post_content {
+    padding: 24px 15px;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4.cs_type_1 .cs_post_content {
+    padding: 24px 15px;
+  }
+  .cs_blog_showcase_grid .cs_post_style_4.cs_type_1 .cs_post_title {
+    margin-bottom: 24px;
+  }
+}
+
+.cs_blog_btn {
+  padding: 12px 24px;
+  background-color: rgba(32, 32, 32, 0.3);
+  border: 1px solid var(--accent-color);
 }/*# sourceMappingURL=style.css.map */
