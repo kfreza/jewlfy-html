@@ -9816,6 +9816,9 @@ label {
   border: 1px solid var(--accent-color);
 }
 
+.cs_discover_section.cs_product_filter_section {
+  padding: 0;
+}
 .cs_discover_section .cs_product_filter_aside {
   flex: 0 0 264px;
   max-width: 264px;
