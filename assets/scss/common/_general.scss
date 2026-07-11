@@ -40,6 +40,11 @@
   font-size: clamp(30px, 5.2vw, 48px);
   line-height: 1.25em;
 }
+// New Added
+.cs_fs_90 {
+  font-size: clamp(32px, 4.7vw, 90px);
+  line-height: 1.11em;
+}
 
 /*=====================================  
   Classess for Fonts Weight
@@ -213,7 +218,6 @@
 }
 
 @media (max-width: 991px) {
-
   .cs_radius_15,
   .cs_radius_20,
   .cs_radius_30 {
