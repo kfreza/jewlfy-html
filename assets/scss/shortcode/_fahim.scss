@@ -1,493 +1,3 @@
-.cs_product_style_1 {
-  &.cs_type_1 {
-    .cs_product_thumb {
-      flex-direction: column;
-    }
-    .cs_product_badges {
-      top: 24px;
-      left: 24px;
-      right: 24px;
-    }
-    .cs_action_btns {
-      flex-direction: column;
-      width: initial;
-      left: initial;
-      bottom: initial;
-      top: 24px;
-      right: 24px;
-    }
-    .cs_product_info {
-      position: absolute;
-      bottom: 0;
-      padding-bottom: 32px;
-    }
-  }
-}
-
-// Testimonial
-.cs_testimonial_section {
-  .container-fluid {
-    max-width: 1744px;
-  }
-}
-.cs_testimonial_style_5 {
-  @extend .cs_testimonial_style_2;
-  display: block;
-  padding: 32px;
-  .cs_review_card {
-    padding-top: 0;
-    .cs_review_content {
-      position: relative;
-      margin-top: 12px;
-      padding-top: 61px;
-    }
-    .cs_review_quote {
-      display: block;
-      z-index: 1;
-      opacity: 1;
-    }
-    .cs_rating {
-      margin-bottom: 20px;
-      z-index: 2;
-    }
-    blockquote {
-      position: relative;
-      z-index: 3;
-      margin-bottom: 0;
-    }
-  }
-}
-
-.cs_testimonial_note {
-  margin-top: 32px;
-}
-
-// Buying Guide
-.cs_guide_section {
-  padding: 64px 0px;
-  .container-fluid {
-    max-width: 1744px;
-  }
-}
-.cs_grid_col_5 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px 44px;
-}
-.cs_iconbox_style_2 {
-  @extend .cs_iconbox_style_1;
-  &.cs_iconbox_center {
-    align-items: flex-start;
-    text-align: left;
-    gap: 6px;
-    .cs_iconbox_info {
-      align-items: start;
-    }
-    .cs_iconbox_title {
-      margin-bottom: 24px;
-    }
-  }
-}
-
-// Deal of the Day
-.cs_deal_section {
-  padding: 64px 0px;
-  .container-fluid {
-    max-width: 1744px;
-  }
-}
-.cs_deal_banner {
-  position: relative;
-  display: flex;
-  align-items: center;
-  min-height: 700px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      135deg,
-      var(--black-color) 7%,
-      rgba(32, 32, 32, 0) 53%
-    );
-  }
-
-  @include cs-respond("tablet-lg") {
-    min-height: auto;
-    padding: 64px 40px;
-
-    &::before {
-      background: linear-gradient(
-        180deg,
-        rgba(32, 32, 32, 0.85) 0%,
-        rgba(32, 32, 32, 0.5) 100%
-      );
-    }
-  }
-}
-.cs_deal_content {
-  position: relative;
-  z-index: 1;
-  padding-left: 200px;
-  .cs_deal_label {
-    margin-bottom: 4px;
-  }
-  .cs_deal_title {
-    margin-bottom: 12px;
-  }
-  .cs_deal_title_sm {
-    display: block;
-  }
-  .cs_deal_desc {
-    margin-bottom: 24px;
-    max-width: 424px;
-  }
-  .cs_deal_price {
-    margin-bottom: 32px;
-    display: flex;
-    align-items: baseline;
-    flex-wrap: wrap;
-    gap: 8px;
-    .cs_deal_price_old {
-      color: var(--gray2-color);
-    }
-  }
-  .cs_deal_timer_label {
-    margin-bottom: 12px;
-  }
-  .cs_countdown {
-    margin-bottom: 24px;
-    justify-content: flex-start;
-    gap: 11px;
-    .cs_countdown_item {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      min-width: 100px;
-      height: 70px;
-      padding: 0;
-      background-color: rgba(32, 32, 32, 0.3);
-      border: 1px solid var(--white-color);
-    }
-    .cs_countdown_label {
-      line-height: 2em;
-    }
-    @include cs-respond("tablet") {
-      gap: 8px;
-      .cs_countdown_item {
-        min-width: 80px;
-      }
-    }
-    @include cs-respond("mobile") {
-      .cs_countdown_item {
-        min-width: 72px;
-      }
-    }
-  }
-  .cs_deal_action {
-    display: flex;
-    align-items: center;
-    gap: 13px;
-    @include cs-respond("mobile") {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
-  }
-  .cs_deal_btn {
-    padding: 12px 24px;
-    background-color: rgba(32, 32, 32, 0.3);
-    border: 1px solid var(--accent-color);
-  }
-  @include cs-respond("laptop") {
-    padding-left: 64px;
-  }
-  @include cs-respond("tablet-lg") {
-    padding-left: 0;
-  }
-}
-
-// Category
-.cs_collection_section {
-  padding: 64px 0px;
-  .container-fluid {
-    max-width: 1744px;
-  }
-}
-.cs_collection_grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-
-  @include cs-respond("tablet-lg") {
-    grid-template-columns: 1fr;
-  }
-}
-.cs_collection_card {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  min-height: 550px;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      180deg,
-      rgba(32, 32, 32, 0) 30%,
-      rgba(32, 32, 32, 0.9) 100%
-    );
-  }
-  @include cs-respond("laptop") {
-    min-height: 480px;
-  }
-  @include cs-respond("tablet") {
-    min-height: 440px;
-  }
-  @include cs-respond("mobile") {
-    min-height: 400px;
-  }
-}
-.cs_collection_content {
-  position: relative;
-  z-index: 1;
-  padding: 48px;
-  max-width: 424px;
-  .cs_collection_title {
-    margin-bottom: 14px;
-  }
-  .cs_collection_desc {
-    margin-bottom: 48px;
-  }
-  @include cs-respond("tablet") {
-    padding: 32px;
-    .cs_collection_desc {
-      margin-bottom: 32px;
-    }
-  }
-  @include cs-respond("mobile") {
-    padding: 24px;
-    max-width: 100%;
-  }
-}
-.cs_collection_btn {
-  padding: 12px 24px;
-  background-color: rgba(32, 32, 32, 0.3);
-  border: 1px solid var(--accent-color);
-}
-
-// Blog
-.cs_blog_section {
-  padding: 64px 0px;
-  .container-fluid {
-    max-width: 1744px;
-  }
-}
-.cs_blog_showcase_grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
-  gap: 24px;
-  .cs_post_style_4 {
-    height: 600px;
-    &::before {
-      background: linear-gradient(
-        180deg,
-        rgba(32, 32, 32, 0) 35%,
-        var(--black-color) 100%
-      );
-    }
-    .cs_post_thumbnail {
-      max-height: none;
-    }
-    .cs_post_content {
-      padding: 32px;
-    }
-
-    &.cs_type_1 {
-      &::before {
-        background: linear-gradient(
-          180deg,
-          rgba(32, 32, 32, 0) 0%,
-          var(--black-color) 100%
-        );
-      }
-      .cs_post_content {
-        padding: 48px;
-      }
-      .cs_post_title {
-        margin-bottom: 48px;
-      }
-    }
-  }
-  @include cs-respond("tablet-lg") {
-    grid-template-columns: 1fr 1fr;
-    .cs_post_style_4 {
-      height: 480px;
-      &.cs_type_1 {
-        grid-column: 1 / -1;
-        .cs_post_content {
-          padding: 32px;
-        }
-        .cs_post_title {
-          margin-bottom: 32px;
-        }
-      }
-    }
-  }
-
-  @include cs-respond("mobile") {
-    grid-template-columns: 1fr;
-    .cs_post_style_4 {
-      height: 420px;
-      .cs_post_content {
-        padding: 24px 15px;
-      }
-      &.cs_type_1 {
-        .cs_post_content {
-          padding: 24px 15px;
-        }
-        .cs_post_title {
-          margin-bottom: 24px;
-        }
-      }
-    }
-  }
-}
-.cs_blog_btn {
-  padding: 12px 24px;
-  background-color: rgba(32, 32, 32, 0.3);
-  border: 1px solid var(--accent-color);
-}
-
-// Discover Collections
-.cs_discover_section {
-  &.cs_product_filter_section {
-    padding: 0;
-  }
-  .cs_product_filter_aside {
-    flex: 0 0 264px;
-    max-width: 264px;
-  }
-  .cs_discover_title_lg {
-    margin-bottom: 24px;
-  }
-  .cs_product_filter_nav {
-    flex-direction: column;
-    gap: 0;
-    padding-left: 50px;
-  }
-  .cs_filter_btn {
-    padding: 0;
-    line-height: 2.25em;
-    border: none;
-    border-radius: 0;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: var(--accent-color);
-      transform: translateY(-50%);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    &.active {
-      padding: 0 0 0 14px;
-      &::before {
-        opacity: 1;
-      }
-    }
-    &:hover,
-    &.active {
-      color: var(--accent-color);
-      background-color: transparent;
-    }
-  }
-  .cs_discover_note {
-    margin-top: auto;
-    padding-top: 24px;
-    max-width: 200px;
-  }
-  @include cs-respond("laptop") {
-    .cs_product_filter_aside {
-      flex-basis: 220px;
-      max-width: 220px;
-    }
-    .cs_product_filter_nav {
-      padding-left: 0;
-    }
-  }
-  @include cs-respond("tablet-lg") {
-    .cs_product_filter_aside {
-      flex-basis: auto;
-      max-width: 100%;
-    }
-    .cs_product_filter_nav {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 8px 24px;
-    }
-    .cs_filter_btn {
-      width: initial;
-    }
-    .cs_discover_note {
-      margin-top: 24px;
-      padding-top: 0;
-    }
-  }
-}
-.cs_discover_card {
-  position: relative;
-  display: flex;
-  align-items: flex-end;
-  width: 648px;
-  min-height: 400px;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-      112deg,
-      var(--black-color) 6.98%,
-      rgba(32, 32, 32, 0) 53.07%
-    );
-  }
-  @include cs-respond("tablet") {
-    min-height: 340px;
-  }
-  @include cs-respond("mobile") {
-    min-height: 300px;
-  }
-}
-.cs_discover_content {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  padding: 32px;
-  .cs_discover_title {
-    margin-bottom: 12px;
-  }
-  .cs_discover_price {
-    margin-bottom: 48px;
-  }
-  @include cs-respond("tablet") {
-    padding: 24px;
-    .cs_discover_price {
-      margin-bottom: 32px;
-    }
-  }
-}
-.cs_discover_btn {
-  display: inline-block;
-  &:hover {
-    color: var(--accent-color);
-  }
-}
-
 // Hero
 .cs_hero_style_4 {
   overflow: hidden;
@@ -684,6 +194,489 @@
         background-color: var(--white-color);
         transform: translate(-50%, -50%);
       }
+    }
+  }
+}
+// Category
+.cs_collection_section {
+  padding: 64px 0px 0px;
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_collection_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+
+  @include cs-respond("tablet-lg") {
+    grid-template-columns: 1fr;
+  }
+}
+.cs_collection_card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 550px;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(32, 32, 32, 0) 30%,
+      rgba(32, 32, 32, 0.9) 100%
+    );
+  }
+  @include cs-respond("laptop") {
+    min-height: 480px;
+  }
+  @include cs-respond("tablet") {
+    min-height: 440px;
+  }
+  @include cs-respond("mobile") {
+    min-height: 400px;
+  }
+}
+.cs_collection_content {
+  position: relative;
+  z-index: 1;
+  padding: 48px;
+  max-width: 424px;
+  .cs_collection_title {
+    margin-bottom: 14px;
+  }
+  .cs_collection_desc {
+    margin-bottom: 48px;
+  }
+  @include cs-respond("tablet") {
+    padding: 32px;
+    .cs_collection_desc {
+      margin-bottom: 32px;
+    }
+  }
+  @include cs-respond("mobile") {
+    padding: 24px;
+    max-width: 100%;
+  }
+}
+.cs_collection_btn {
+  padding: 12px 24px;
+  background-color: rgba(32, 32, 32, 0.3);
+  border: 1px solid var(--accent-color);
+}
+// Bestseller, Scinature & Popular Section
+.cs_product_style_1 {
+  &.cs_type_1 {
+    .cs_product_thumb {
+      flex-direction: column;
+    }
+    .cs_product_badges {
+      top: 24px;
+      left: 24px;
+      right: 24px;
+    }
+    .cs_action_btns {
+      flex-direction: column;
+      width: initial;
+      left: initial;
+      bottom: initial;
+      top: 24px;
+      right: 24px;
+    }
+    .cs_product_info {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: 32px;
+    }
+  }
+}
+// Deal of the Day
+.cs_deal_section {
+  padding: 64px 0 0;
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_deal_banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 700px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      135deg,
+      var(--black-color) 7%,
+      rgba(32, 32, 32, 0) 53%
+    );
+  }
+
+  @include cs-respond("tablet-lg") {
+    min-height: auto;
+    padding: 64px 40px;
+
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(32, 32, 32, 0.85) 0%,
+        rgba(32, 32, 32, 0.5) 100%
+      );
+    }
+  }
+}
+.cs_deal_content {
+  position: relative;
+  z-index: 1;
+  padding-left: 200px;
+  .cs_deal_label {
+    margin-bottom: 4px;
+  }
+  .cs_deal_title {
+    margin-bottom: 12px;
+  }
+  .cs_deal_title_sm {
+    display: block;
+  }
+  .cs_deal_desc {
+    margin-bottom: 24px;
+    max-width: 424px;
+  }
+  .cs_deal_price {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    .cs_deal_price_old {
+      color: var(--gray2-color);
+    }
+  }
+  .cs_deal_timer_label {
+    margin-bottom: 12px;
+  }
+  .cs_countdown {
+    margin-bottom: 24px;
+    justify-content: flex-start;
+    gap: 11px;
+    .cs_countdown_item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 100px;
+      height: 70px;
+      padding: 0;
+      background-color: rgba(32, 32, 32, 0.3);
+      border: 1px solid var(--white-color);
+    }
+    .cs_countdown_label {
+      line-height: 2em;
+    }
+    @include cs-respond("tablet") {
+      gap: 8px;
+      .cs_countdown_item {
+        min-width: 80px;
+      }
+    }
+    @include cs-respond("mobile") {
+      .cs_countdown_item {
+        min-width: 72px;
+      }
+    }
+  }
+  .cs_deal_action {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    @include cs-respond("mobile") {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  .cs_deal_btn {
+    padding: 12px 24px;
+    background-color: rgba(32, 32, 32, 0.3);
+    border: 1px solid var(--accent-color);
+  }
+  @include cs-respond("laptop") {
+    padding-left: 64px;
+  }
+  @include cs-respond("tablet-lg") {
+    padding-left: 0;
+  }
+}
+// Discover Collections
+.cs_discover_section {
+  &.cs_product_filter_section {
+    padding: 0;
+  }
+  .cs_product_filter_aside {
+    flex: 0 0 264px;
+    max-width: 264px;
+  }
+  .cs_discover_title_lg {
+    margin-bottom: 24px;
+  }
+  .cs_product_filter_nav {
+    flex-direction: column;
+    gap: 0;
+    padding-left: 50px;
+  }
+  .cs_filter_btn {
+    padding: 0;
+    line-height: 2.25em;
+    border: none;
+    border-radius: 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    &.active {
+      padding: 0 0 0 14px;
+      &::before {
+        opacity: 1;
+      }
+    }
+    &:hover,
+    &.active {
+      color: var(--accent-color);
+      background-color: transparent;
+    }
+  }
+  .cs_discover_note {
+    margin-top: auto;
+    padding-top: 24px;
+    max-width: 200px;
+  }
+  @include cs-respond("laptop") {
+    .cs_product_filter_aside {
+      flex-basis: 220px;
+      max-width: 220px;
+    }
+    .cs_product_filter_nav {
+      padding-left: 0;
+    }
+  }
+  @include cs-respond("tablet-lg") {
+    .cs_product_filter_aside {
+      flex-basis: auto;
+      max-width: 100%;
+    }
+    .cs_product_filter_nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+    }
+    .cs_filter_btn {
+      width: initial;
+    }
+    .cs_discover_note {
+      margin-top: 24px;
+      padding-top: 0;
+    }
+  }
+}
+.cs_discover_card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  width: 648px;
+  min-height: 400px;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      112deg,
+      var(--black-color) 6.98%,
+      rgba(32, 32, 32, 0) 53.07%
+    );
+  }
+  @include cs-respond("tablet") {
+    min-height: 340px;
+  }
+  @include cs-respond("mobile") {
+    min-height: 300px;
+  }
+}
+.cs_discover_content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  padding: 32px;
+  .cs_discover_title {
+    margin-bottom: 12px;
+  }
+  .cs_discover_price {
+    margin-bottom: 48px;
+  }
+  @include cs-respond("tablet") {
+    padding: 24px;
+    .cs_discover_price {
+      margin-bottom: 32px;
+    }
+  }
+}
+.cs_discover_btn {
+  display: inline-block;
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+// Testimonial
+.cs_testimonial_section {
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_testimonial_style_5 {
+  @extend .cs_testimonial_style_2;
+  display: block;
+  padding: 32px;
+  .cs_review_card {
+    padding-top: 0;
+    .cs_review_content {
+      position: relative;
+      margin-top: 12px;
+      padding-top: 61px;
+    }
+    .cs_review_quote {
+      display: block;
+      z-index: 1;
+      opacity: 1;
+    }
+    .cs_rating {
+      margin-bottom: 20px;
+      z-index: 2;
+    }
+    blockquote {
+      position: relative;
+      z-index: 3;
+      margin-bottom: 0;
+    }
+  }
+}
+.cs_testimonial_note {
+  margin-top: 32px;
+}
+// Blog
+.cs_blog_section {
+  padding: 64px 0 0;
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_blog_showcase_grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 24px;
+  .cs_post_style_4 {
+    height: 600px;
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(32, 32, 32, 0) 35%,
+        var(--black-color) 100%
+      );
+    }
+    .cs_post_thumbnail {
+      max-height: none;
+    }
+    .cs_post_content {
+      padding: 32px;
+    }
+
+    &.cs_type_1 {
+      &::before {
+        background: linear-gradient(
+          180deg,
+          rgba(32, 32, 32, 0) 0%,
+          var(--black-color) 100%
+        );
+      }
+      .cs_post_content {
+        padding: 48px;
+      }
+      .cs_post_title {
+        margin-bottom: 48px;
+      }
+    }
+  }
+  @include cs-respond("tablet-lg") {
+    grid-template-columns: 1fr 1fr;
+    .cs_post_style_4 {
+      height: 480px;
+      &.cs_type_1 {
+        grid-column: 1 / -1;
+        .cs_post_content {
+          padding: 32px;
+        }
+        .cs_post_title {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+
+  @include cs-respond("mobile") {
+    grid-template-columns: 1fr;
+    .cs_post_style_4 {
+      height: 420px;
+      .cs_post_content {
+        padding: 24px 15px;
+      }
+      &.cs_type_1 {
+        .cs_post_content {
+          padding: 24px 15px;
+        }
+        .cs_post_title {
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+}
+.cs_blog_btn {
+  padding: 12px 24px;
+  background-color: rgba(32, 32, 32, 0.3);
+  border: 1px solid var(--accent-color);
+}
+// Buying Guide
+.cs_guide_section {
+  padding: 64px 0px;
+  .container-fluid {
+    max-width: 1744px;
+  }
+}
+.cs_grid_col_5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px 44px;
+}
+.cs_iconbox_style_2 {
+  @extend .cs_iconbox_style_1;
+  &.cs_iconbox_center {
+    align-items: flex-start;
+    text-align: left;
+    gap: 6px;
+    .cs_iconbox_info {
+      align-items: start;
+    }
+    .cs_iconbox_title {
+      margin-bottom: 24px;
     }
   }
 }
