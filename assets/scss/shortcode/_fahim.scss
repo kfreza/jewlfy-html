@@ -379,7 +379,7 @@
   }
   .cs_filter_btn {
     padding: 0;
-    line-height: 36px;
+    line-height: 2.25em;
     border: none;
     border-radius: 0;
     &::before {
@@ -395,9 +395,8 @@
       opacity: 0;
       transition: opacity 0.3s ease;
     }
-
     &.active {
-      padding: 0 0 0 18px;
+      padding: 0 0 0 14px;
       &::before {
         opacity: 1;
       }
@@ -446,24 +445,22 @@
   display: flex;
   align-items: flex-end;
   width: 648px;
-  max-width: 84vw;
-  height: 400px;
+  min-height: 400px;
   &::before {
     content: "";
     position: absolute;
     inset: 0;
     background: linear-gradient(
-      56deg,
-      var(--black-color) 7%,
-      rgba(32, 32, 32, 0) 53%
+      112deg,
+      var(--black-color) 6.98%,
+      rgba(32, 32, 32, 0) 53.07%
     );
   }
   @include cs-respond("tablet") {
-    height: 340px;
+    min-height: 340px;
   }
   @include cs-respond("mobile") {
-    max-width: 88vw;
-    height: 300px;
+    min-height: 300px;
   }
 }
 .cs_discover_content {
