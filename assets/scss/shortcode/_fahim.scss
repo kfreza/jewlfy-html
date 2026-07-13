@@ -592,7 +592,7 @@
   grid-template-columns: 2fr 1fr 1fr;
   gap: 24px;
   .cs_post_style_4 {
-    min-height: 600px;
+    max-height: 600px;
     &::before {
       background: linear-gradient(
         180deg,
@@ -655,7 +655,6 @@
   @include cs-respond("tablet-lg") {
     grid-template-columns: 1fr 1fr;
     .cs_post_style_4 {
-      min-height: 480px;
       &.cs_type_1 {
         grid-column: 1 / -1;
       }
@@ -664,12 +663,12 @@
   @include cs-respond("mobile") {
     grid-template-columns: 1fr;
     .cs_post_style_4 {
-      height: 360px;
-      min-height: 360px;
+      max-height: 500px;
       .cs_post_content {
         padding: 24px 15px;
       }
       &.cs_type_1 {
+        min-height: 420px;
         .cs_post_content {
           padding: 24px 15px;
         }
@@ -696,6 +695,18 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px 44px;
+  @include cs-respond("desktop") {
+    gap: 24px;
+  }
+  @include cs-respond("laptop") {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @include cs-respond("tablet") {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include cs-respond("mobile") {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .cs_iconbox_style_2 {
   @extend .cs_iconbox_style_1;
